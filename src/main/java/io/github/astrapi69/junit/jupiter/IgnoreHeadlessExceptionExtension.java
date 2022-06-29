@@ -22,8 +22,32 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package io.github.astrapi69;
+package io.github.astrapi69.junit.jupiter;
 
-public class InitialTemplate
+import java.awt.HeadlessException;
+
+import org.junit.jupiter.api.extension.ExtensionContext;
+import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
+
+/**
+ * The class {@link IgnoreHeadlessExceptionExtension} can be used if the {@link HeadlessException}
+ * should be ignored
+ */
+public class IgnoreHeadlessExceptionExtension implements TestExecutionExceptionHandler
 {
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void handleTestExecutionException(ExtensionContext context, Throwable throwable)
+		throws Throwable
+	{
+
+		if (throwable instanceof HeadlessException)
+		{
+			return;
+		}
+		throw throwable;
+	}
 }
