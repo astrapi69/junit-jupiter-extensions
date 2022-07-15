@@ -22,32 +22,36 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package io.github.astrapi69.junit.jupiter;
+package io.github.astrapi69.junit.jupiter.callback;
 
-import java.awt.HeadlessException;
-
-import org.junit.jupiter.api.extension.ExtensionContext;
-import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
+import lombok.Getter;
+import io.github.astrapi69.lang.TypeArgumentsExtensions;
 
 /**
- * The class {@link IgnoreHeadlessExceptionExtension} can be used if the {@link HeadlessException}
- * should be ignored
+ * The abstract class {@link AbstractTypeResolver} can resolve the generic type.
+ *
+ * @param <T>
+ *            the generic type for the concrete type
  */
-public class IgnoreHeadlessExceptionExtension implements TestExecutionExceptionHandler
+public abstract class AbstractTypeResolver<T>
 {
 
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public void handleTestExecutionException(ExtensionContext context, Throwable throwable)
-		throws Throwable
-	{
+	/** The concrete class type */
+	@Getter
+	Class<T> type;
 
-		if (throwable instanceof HeadlessException)
-		{
-			return;
-		}
-		throw throwable;
+	/* initialize block */
+	{
+		initialize();
 	}
+
+	/**
+	 * Initialize and sets the concrete class type
+	 */
+	@SuppressWarnings(value = { "unchecked" })
+	protected void initialize()
+	{
+		this.type = (Class<T>)TypeArgumentsExtensions.getFirstTypeArgument(this.getClass());
+	}
+
 }

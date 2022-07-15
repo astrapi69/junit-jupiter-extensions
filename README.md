@@ -14,6 +14,8 @@
 </div>
 
 Provides extension and other classes for use with junit-jupiter(junit5).
+For more information about the extension model from junit5 see the
+[documentation of the extension model from junit-jupiter](https://junit.org/junit5/docs/current/user-guide/#extensions)
 
 > Please support this project by simply putting a Github <a class="github-button" href="https://github.com/astrapi69/junit-jupiter-extensions" data-icon="octicon-star" aria-label="Star astrapi69/junit-jupiter-extensions on GitHub">
 > Star ⭐</a>
