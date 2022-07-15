@@ -13,7 +13,8 @@
 
 </div>
 
-Provides extension and other classes for use with junit-jupiter(junit5).
+Provides extension and exception hanlder classes for use with junit-jupiter-api (junit5).
+
 For more information about the extension model from junit5 see the
 [documentation of the extension model from junit-jupiter](https://junit.org/junit5/docs/current/user-guide/#extensions)
 
