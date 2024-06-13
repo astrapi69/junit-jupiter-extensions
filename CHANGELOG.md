@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 1.2-SNAPSHOT
+Version 2-SNAPSHOT
 -------------
 
 ADDED:
@@ -10,6 +10,7 @@ ADDED:
 
 CHANGED:
 
+- update to jdk version 17
 - update of gradle to new version 8.8
 
 Version 1.1
