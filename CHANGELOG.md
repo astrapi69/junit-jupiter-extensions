@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 2-SNAPSHOT
+Version 2
 -------------
 
 ADDED:
@@ -12,6 +12,10 @@ CHANGED:
 
 - update to jdk version 17
 - update of gradle to new version 8.8
+- update of gradle-plugin dependency 'io.freefair.gradle:lombok-plugin' to new version 8.6
+- update of gradle-plugin dependency 'com.diffplug.spotless:spotless-plugin-gradle' to new version 7.0.0.BETA1
+- update of dependency junit-jupiter-api to new release candidate version 5.11.0-M2
+- update of test dependency file worker in new minor version 17.1
 
 Version 1.1
 -------------
