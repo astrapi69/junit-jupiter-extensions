@@ -24,8 +24,8 @@
  */
 package io.github.astrapi69.junit.jupiter.callback;
 
-import lombok.Getter;
 import io.github.astrapi69.lang.TypeArgumentsExtensions;
+import lombok.Getter;
 
 /**
  * The abstract class {@link AbstractTypeResolver} can resolve the generic type.

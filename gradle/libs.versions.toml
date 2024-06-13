@@ -1,0 +1,41 @@
+[versions]
+file-worker-version = "8.2"
+gradle-plugin-grgit-version = "5.2.2"
+gradle-plugin-license-version = "0.16.1"
+gradle-plugin-lombok-version = "8.6"
+gradle-plugin-spotless-version = "7.0.0.BETA1"
+gradle-plugin-version-catalog-update-version = "0.8.4"
+gradle-plugin-versions-version = "0.51.0"
+jobj-core-version = "6"
+junit-jupiter-api-version = "5.9.0-RC1"
+junit-jupiter-engine-version = "5.9.0-RC1"
+junit-platform-launcher-version = "1.11.0-M2"
+lombok-version = "1.18.24"
+meanbean-version = "2.0.3"
+throwable-version = "2.3"
+
+[libraries]
+file-worker = { module = "io.github.astrapi69:file-worker", version.ref = "file-worker-version" }
+jobj-core = { module = "io.github.astrapi69:jobj-core", version.ref = "jobj-core-version" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter-api-version" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine-version" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-platform-launcher-version" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok-version" }
+meanbean = { module = "org.meanbean:meanbean", version.ref = "meanbean-version" }
+throwable = { module = "io.github.astrapi69:throwable", version.ref = "throwable-version" }
+
+[bundles]
+unit-testing = [
+    "file-worker",
+    "junit-jupiter-api",
+    "meanbean",
+    "throwable",
+]
+
+[plugins]
+gradle-versions-plugin = { id = "com.github.ben-manes.versions", version.ref = "gradle-plugin-versions-version" }
+grgit-gradle = { id = "org.ajoberstar.grgit", version.ref = "gradle-plugin-grgit-version" }
+license-gradle-plugin = { id = "com.github.hierynomus.license", version.ref = "gradle-plugin-license-version" }
+lombok-plugin = { id = "io.freefair.lombok", version.ref = "gradle-plugin-lombok-version" }
+spotless-plugin-gradle = { id = "com.diffplug.spotless", version.ref = "gradle-plugin-spotless-version" }
+version-catalog-update = { id = "nl.littlerobots.version-catalog-update", version.ref = "gradle-plugin-version-catalog-update-version" }

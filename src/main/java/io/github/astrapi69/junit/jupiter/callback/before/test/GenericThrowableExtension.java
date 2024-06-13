@@ -24,13 +24,12 @@
  */
 package io.github.astrapi69.junit.jupiter.callback.before.test;
 
-import lombok.AccessLevel;
-import lombok.experimental.FieldDefaults;
-
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
 
 import io.github.astrapi69.junit.jupiter.callback.AbstractThrowableTypeResolver;
+import lombok.AccessLevel;
+import lombok.experimental.FieldDefaults;
 
 /**
  * The abstract class {@link GenericThrowableExtension} can be extended with a concrete type that

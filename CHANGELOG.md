@@ -4,7 +4,13 @@
 Version 1.2-SNAPSHOT
 -------------
 
+ADDED:
 
+- new libs.versions.toml file for new automatic catalog versions update
+
+CHANGED:
+
+- update of gradle to new version 8.8
 
 Version 1.1
 -------------
