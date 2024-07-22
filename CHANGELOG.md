@@ -4,6 +4,18 @@
 Version 2.1-SNAPSHOT
 -------------
 
+ADDED:
+
+- new dependency junit-jupiter-params
+- new converter class StringToByteArrayConverter for convert from csv files from String to byte array
+
+CHANGED:
+
+- update of gradle to new version 8.9
+- update of dependency lombok to new version 1.18.34
+- update of test dependency file-worker in new minor version 17.3
+- update of test dependency throwable in new major version 3
+
 Version 2
 -------------
 

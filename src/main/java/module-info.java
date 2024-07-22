@@ -24,9 +24,11 @@ module junit.jupiter.extensions.main
 	requires jobj.core.main;
 	requires static lombok;
 	requires org.junit.jupiter.api;
+	requires org.junit.jupiter.params;
 
 	exports io.github.astrapi69.junit.jupiter.callback;
 	exports io.github.astrapi69.junit.jupiter.callback.all;
 	exports io.github.astrapi69.junit.jupiter.callback.before.test;
 	exports io.github.astrapi69.junit.jupiter.callback.each;
+	exports io.github.astrapi69.junit.jupiter.converter;
 }
