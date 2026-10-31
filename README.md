@@ -4,12 +4,11 @@
 
 [![Java CI with Gradle](https://github.com/astrapi69/junit-jupiter-extensions/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/junit-jupiter-extensions/actions/workflows/gradle.yml)
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/junit-jupiter-extensions.svg?style=flat)](https://github.com/astrapi69/junit-jupiter-extensions/issues)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/junit-jupiter-extensions/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/junit-jupiter-extensions)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/junit-jupiter-extensions)](https://central.sonatype.com/artifact/io.github.astrapi69/junit-jupiter-extensions)
 [![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/junit-jupiter-extensions.svg)](http://www.javadoc.io/doc/io.github.astrapi69/junit-jupiter-extensions)
 [![MIT License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 [![Hits Of Code](https://hitsofcode.com/github/astrapi69/junit-jupiter-extensions?branch=develop)](https://hitsofcode.com/github/astrapi69/junit-jupiter-extensions/view?branch=develop)
-[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/junit-jupiter-extensions)](https://github.com/astrapi69/junit-jupiter-extensions)
 
 </div>
 
@@ -36,7 +35,7 @@ The source code comes under the liberal MIT License, making junit-jupiter-extens
 
 ## gradle dependency
 
-Replace the variable ${latestVersion} with the current latest version: [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/junit-jupiter-extensions/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/junit-jupiter-extensions)
+Replace the variable ${latestVersion} with the current latest version: [![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/junit-jupiter-extensions)](https://central.sonatype.com/artifact/io.github.astrapi69/junit-jupiter-extensions)
 
 You can first define the version in the ext section and add than the following gradle dependency to
 your project `build.gradle` if you want to import the core functionality of junit-jupiter-extensions:
@@ -61,8 +60,7 @@ then add the dependency to the dependencies area
 
 ## Maven dependency
 
-Maven dependency is now on sonatype.
-Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~junit-jupiter-extensions~~~) for latest snapshots and releases.
+The library is on Maven Central. Check out [Maven Central](https://central.sonatype.com/artifact/io.github.astrapi69/junit-jupiter-extensions) for the latest release.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core
 functionality of junit-jupiter-extensions:
